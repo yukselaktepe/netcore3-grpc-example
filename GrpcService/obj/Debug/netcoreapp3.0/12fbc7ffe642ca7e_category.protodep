@@ -1,0 +1,3 @@
+obj\Debug\netcoreapp3.0/Category.cs \
+obj\Debug\netcoreapp3.0/CategoryGrpc.cs: C:/Users/yaktepe/.nuget/packages/grpc.tools/2.23.0/build/native/include/google/protobuf/empty.proto\
+ Protos/category.proto

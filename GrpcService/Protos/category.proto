@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "GrpcService";
+
+package categories;
+
+
+service CategoryGreeter {
+  rpc List (google.protobuf.Empty) returns (CategoryList);
+  rpc Insert (Category) returns (google.protobuf.Empty);
+  rpc Get (CategoryId) returns (Category);  
+}
+
+
+message Category {
+  int32 id = 1;
+  string  name = 2;
+}
+ 
+// Ornek bir liste
+message CategoryList {
+  repeated Category Category = 1;
+}
+ 
+message CategoryId {
+  int32 id = 1;
+}
